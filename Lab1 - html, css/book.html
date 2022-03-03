@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pl">
+<!-- walidator zwrócił błąd przy tagu html, o brakujący atrybut lang -->
+<head>
+    <title>Renesans. Assassin's Creed. Tom 1 - Bowden Oliver</title>
+    <meta name="author" content="Bowden Oliver">
+    <meta charset="utf-8">
+    <meta name="description" content="aplikacje internetowe, ćwiczenie, html, assassin's creed, ubisoft">
+    <meta name="robots" content="index, nofollow">
+    <style>
+        * {
+            font-family: Tahoma;
+            --text-orange: orange;
+        }
+
+        body {
+            margin: 5em 10em 5em 10em;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        h1 {
+            color: yellow;
+        }
+
+        h2 {
+            color: var(--text-orange);
+            /* przykład użycia zmiennych w CSS */
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" title="Arkusz stylów CSS">
+    <!-- jeżeli znacznik link z plikiem css jest nad znacnzikiem style, h1 bd miało kolor żółty, w przecinwym wypadku pozostanie kolor zielony -->
+    <!-- użycie znacznika !important powoduje, że wartość ta nie może zostać nadpisana dlatego kolor żółty nigdy nie zostanie nadpisany -->
+</head>
+
+<body>
+    <h1 style="color: red;">Renesans. Assassin's Creed. Tom 1</h1>
+    <!-- kolor pozostaje nadal zolty, jednak po usunieciu znacznika bedzie czerwony poniewaz reguly style w znaczniku wykonywane sa na koncu, dlatego wszystkie pozostale reguly color zostaja nadpisane -->
+    <h2>Bowden Oliver</h2>
+    <table>
+        <tr>
+            <td>
+                <img src="https://ecsmedia.pl/c/renesans-assassin-s-creed-tom-1-w-iext83351773.jpg" alt="book cover">
+            </td>
+            <td>
+                <ul>
+                    <li><b>wydawnictwo</b>: <u>Insignis</u></li>
+                    <li><b>liczba stron</b>: 488</li>
+                    <li><b>okładka</b>: miękka</li>
+                    <li><b>cena</b>: <span id="cena">29,99</span> zł</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p class="wstep">„Poprzysiągłem zemstę tym, którzy zdradzili moją rodzinę. Jestem Ezio Auditore da
+                    Firenze. Jestem asasynem…”</p>
+                <p>Młody szlachcic, zdradzony przez panujące rody Italii, wyrusza w poszukiwaniu zemsty. Aby stawić
+                    czoła spiskowcom i przywrócić rodzinie honor, będzie musiał poznać sztukę zabijania. W swojej misji
+                    Ezio skorzysta z pomocy światłych umysłów, takich jak Leonardo da Vinci czy Niccolò Machiavelli,
+                    świadom, że jego przeżycie zależy od nabytych umiejętności. Dla swoich sprzymierzeńców stanie się
+                    siłą przemian, bojownikiem o wolność i sprawiedliwość. Dla wrogów będzie śmiertelnym zagrożeniem,
+                    siejącym postrach wśród tyranów, którzy ciemiężą lud Italii...</p>
+                <p>Tak rozpoczyna się epicka opowieść o władzy, zemście i spisku. Książka na podstawie bestsellerowej
+                    gry firmy Ubisoft Assassin's Creed II.</p>
+                <p>Powyższy opis pochodzi od wydawcy.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

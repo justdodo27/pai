@@ -1,0 +1,47 @@
+li {
+    list-style-type: square;
+}
+
+span#cena{
+    color: red;
+    font-weight: bold;
+}
+
+p.wstep{
+    font-style: italic;
+}
+
+td img{
+    border: solid blue 5px;
+    transition: border 0.2s linear;
+}
+
+td > img:hover{
+    border: solid red 5px;
+}
+
+h1 + h2 {
+    letter-spacing: 5px;
+}
+
+td[colspan="2"] p {
+    font-size: small;
+}
+
+p + p{
+    color: gray;
+}
+
+body{
+    background-image: url("https://dictionary.cambridge.org/pl/images/thumb/book_noun_001_01679.jpg?version=5.0.213");
+    background-repeat: repeat-y;
+}
+
+h1 {
+    color: blue;
+}
+
+h1 {
+    color: green;
+}
+/* zastosowana została reguła color: green, ponieważ występuje ona później, więc reguła color: blue jest nadpisywana */
